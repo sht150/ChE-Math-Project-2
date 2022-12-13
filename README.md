@@ -6,9 +6,9 @@ Estrogen receptor $ER\alpha$ is found in various cell types in human body. Under
 
 The ligand binding protein domain of the estrogen receptor is a monomer $(M_{1})$ which rapidly dimerizes $(D_{11})$ in solution. The equilibrium of the monomer-dimer solution is achieved rapidly and thus, the kinetics of formation of dimer cannot be observed experimentally. Thus, the dimer exchange assay protocol is employed which involves addition of maltose binding protein monomer $(M_{2})$ to the ligand binding protein. This results in sufficiently high equilibriation times to allow the kinetics to be recorded. However, this also results in formation of two other dimers - the fusion dimer $(D_{22})$ and the heterodimer $(D_{12})$.
 
-\begin{align}
+$
 1. M_{1} + M_{1} \leftrightarrow D_{11}
-\end{align}
+$
 \begin{align}
 2. M_{2} + M_{2} \leftrightarrow D_{22}
 \end{align}
