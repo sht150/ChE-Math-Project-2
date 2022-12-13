@@ -6,22 +6,19 @@ Estrogen receptor $ER\alpha$ is found in various cell types in human body. Under
 
 The ligand binding protein domain of the estrogen receptor is a monomer $(M_{1})$ which rapidly dimerizes $(D_{11})$ in solution. The equilibrium of the monomer-dimer solution is achieved rapidly and thus, the kinetics of formation of dimer cannot be observed experimentally. Thus, the dimer exchange assay protocol is employed which involves addition of maltose binding protein monomer $(M_{2})$ to the ligand binding protein. This results in sufficiently high equilibriation times to allow the kinetics to be recorded. However, this also results in formation of two other dimers - the fusion dimer $(D_{22})$ and the heterodimer $(D_{12})$.
 
-$
-1.$ M_{1} + M_{1} \leftrightarrow D_{11}$
-$
-\begin{align}
-2. M_{2} + M_{2} \leftrightarrow D_{22}
-\end{align}
-\begin{align}
-3. M_{1} + M_{2} \leftrightarrow D_{12}
-\end{align}
+
+1.$M_{1} + M_{1} \leftrightarrow D_{11}$
+
+2. $M_{2} + M_{2} \leftrightarrow D_{22}$
+
+3. $M_{1} + M_{2} \leftrightarrow D_{12}$
+
 Let $k_{1f}$ and $k_{1r}$ be forward and backward rate constants for the first reaction. Similarly, $k_{2f}$ and $k_{2r}$ for second reaction and $k_{3f}$ and $k_{3r}$ for third reaction. 
 
 Using the law of mass action, we can get the following species balance equations:
 
-\begin{align}
-\frac{dM_{1}}{dt}=-2k_{1f}(M_{1})^{2}+2k_{1r}(D_{11})-k_{3f}(M_{1})(M_{2})+k_{3r}(D_{12})
-\end{align}
+$\frac{dM_{1}}{dt}=-2k_{1f}(M_{1})^{2}+2k_{1r}(D_{11})-k_{3f}(M_{1})(M_{2})+k_{3r}(D_{12})$
+
 
 \begin{align}
 \frac{dM_{2}}{dt}=-2k_{2f}(M_{2})^{2}+2k_{2r}(D_{22})-k_{3f}(M_{1})(M_{2})+k_{3r}(D_{12})
