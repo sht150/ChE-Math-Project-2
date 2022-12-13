@@ -66,3 +66,4 @@ Incorporating the above assumptions in the system of ordinary differential equat
 \frac{dD_{12}}{dt}=2k_{f}(2D_{11}(t_{0})+D_{12}(t_{0})-2D_{11}+D_{12})(2D_{22}(t_{0})+D_{12}(t_{0})-2D_{22}+D_{12})-k_{r}(D_{12})
 \end{align}
 where, $t_{0}$ is initial time
+
