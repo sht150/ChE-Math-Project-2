@@ -1,5 +1,5 @@
 # ChE-Math-Project-2
-## Mathematical modeling of dimer exhange assay of estrogen receptors
+## Mathematical modeling of dimer exchange assay of estrogen receptors
 Reference: Goulet, D., 2016. Modeling, simulating, and parameter fitting of biochemical kinetic experiments. siam REVIEW, 58(2), pp.331-353.
 
 Estrogen receptor $ER\alpha$ is found in various cell types in human body. Understanding the rates of formation of these receptors is of particular interest due to their correlation with breast cancer. Typically, the dimer exchange assay protocol is employed for the laboratory studies of estrogen receptors.
@@ -46,3 +46,29 @@ $\frac{dD_{22}}{dt}=k_{f}(2D_{22}(t_{0})+D_{12}(t_{0})-2D_{22}+D_{12})^{2}-k_{r}
 $\frac{dD_{12}}{dt}=2k_{f}(2D_{11}(t_{0})+D_{12}(t_{0})-2D_{11}+D_{12})(2D_{22}(t_{0})+D_{12}(t_{0})-2D_{22}+D_{12})-k_{r}(D_{12})$
 
 where, $t_{0}$ is initial time
+
+### Experimental data for dimerization assay kinetics
+
+### Parameter fitting
+The parameter fitting was carried out by minimizing the root mean square function of the experimental data.
+```
+from scipy.optimize import minimize
+
+sol1 = minimize(RMSE, x0 = (280, 0.1));
+
+print(sol1);
+```
+ fun: 0.38108519866792356
+ hess_inv: array([[0.41656698, 0.11359929],
+       [0.11359929, 0.03246353]])
+      jac: array([0.00011528, 0.00029674])
+  message: 'Desired error not necessarily achieved due to precision loss.'
+     nfev: 181
+      nit: 9
+     njev: 55
+   status: 2
+  success: False
+        x: array([278.98170532,   0.3063763 ])
+
+The parameter fit was obtained as (kf,kr) = (279, 0.31) and these values were used in further analysis. The following figure shows the plot of experimental data and model fit.
+
