@@ -7,7 +7,7 @@ Estrogen receptor $ER\alpha$ is found in various cell types in human body. Under
 The ligand binding protein domain of the estrogen receptor is a monomer $(M_{1})$ which rapidly dimerizes $(D_{11})$ in solution. The equilibrium of the monomer-dimer solution is achieved rapidly and thus, the kinetics of formation of dimer cannot be observed experimentally. Thus, the dimer exchange assay protocol is employed which involves addition of maltose binding protein monomer $(M_{2})$ to the ligand binding protein. This results in sufficiently high equilibriation times to allow the kinetics to be recorded. However, this also results in formation of two other dimers - the fusion dimer $(D_{22})$ and the heterodimer $(D_{12})$.
 
 
-1.$M_{1} + M_{1} \leftrightarrow D_{11}$
+1. $M_{1} + M_{1} \leftrightarrow D_{11}$
 
 2. $M_{2} + M_{2} \leftrightarrow D_{22}$
 
@@ -19,31 +19,19 @@ Using the law of mass action, we can get the following species balance equations
 
 $\frac{dM_{1}}{dt}=-2k_{1f}(M_{1})^{2}+2k_{1r}(D_{11})-k_{3f}(M_{1})(M_{2})+k_{3r}(D_{12})$
 
+$\frac{dM_{2}}{dt}=-2k_{2f}(M_{2})^{2}+2k_{2r}(D_{22})-k_{3f}(M_{1})(M_{2})+k_{3r}(D_{12})$
 
-\begin{align}
-\frac{dM_{2}}{dt}=-2k_{2f}(M_{2})^{2}+2k_{2r}(D_{22})-k_{3f}(M_{1})(M_{2})+k_{3r}(D_{12})
-\end{align}
+$\frac{dD_{11}}{dt}=k_{1f}(M_{1})^{2}-k_{1r}(D_{11})$
 
-\begin{align}
-\frac{dD_{11}}{dt}=k_{1f}(M_{1})^{2}-k_{1r}(D_{11})
-\end{align}
+$\frac{dD_{22}}{dt}=k_{2f}(M_{2})^{2}-k_{2r}(D_{22})$
 
-\begin{align}
-\frac{dD_{22}}{dt}=k_{2f}(M_{2})^{2}-k_{2r}(D_{22})
-\end{align}
+$\frac{dD_{12}}{dt}=k_{3f}(M_{1})(M_{2})-k_{3r}(D_{12})$
 
-\begin{align}
-\frac{dD_{12}}{dt}=k_{3f}(M_{1})(M_{2})-k_{3r}(D_{12})
-\end{align}
 The above model can be reduced based on the fact that monomesr are never destroyed, they are simply incorporated into dimers.
 Thus,
-\begin{align}
-\frac{d(M_{1}+2D_{11}+D_{12})}{dt}=0
-\end{align}
+$\frac{d(M_{1}+2D_{11}+D_{12})}{dt}=$
 
-\begin{align}
-\frac{d(M_{2}+2D_{22}+D_{12})}{dt}=0
-\end{align}
+$\frac{d(M_{2}+2D_{22}+D_{12})}{dt}=0$
 
 ##### Assumptions
 1. Addition of maltose binding protein to ligand binding protein does not significantly alter dimerization kinetic parameters. Thus, $k_{1f} = k_{2f} = k_{3f}/2 = k_{f}$ and $k_{1r} = k_{2r} = k_{3r} = k_{r}$
@@ -51,15 +39,10 @@ Thus,
 
 Incorporating the above assumptions in the system of ordinary differential equations of species balance, the model can be reduced to the following three equations:
 
-\begin{align}
-\frac{dD_{11}}{dt}=k_{f}(2D_{11}(t_{0})+D_{12}(t_{0})-2D_{11}+D_{12})^{2}-k_{r}(D_{11})
-\end{align}
+$\frac{dD_{11}}{dt}=k_{f}(2D_{11}(t_{0})+D_{12}(t_{0})-2D_{11}+D_{12})^{2}-k_{r}(D_{11})$
 
-\begin{align}
-\frac{dD_{22}}{dt}=k_{f}(2D_{22}(t_{0})+D_{12}(t_{0})-2D_{22}+D_{12})^{2}-k_{r}(D_{22})
-\end{align}
+$\frac{dD_{22}}{dt}=k_{f}(2D_{22}(t_{0})+D_{12}(t_{0})-2D_{22}+D_{12})^{2}-k_{r}(D_{22})$
 
-\begin{align}
-\frac{dD_{12}}{dt}=2k_{f}(2D_{11}(t_{0})+D_{12}(t_{0})-2D_{11}+D_{12})(2D_{22}(t_{0})+D_{12}(t_{0})-2D_{22}+D_{12})-k_{r}(D_{12})
-\end{align}
+$\frac{dD_{12}}{dt}=2k_{f}(2D_{11}(t_{0})+D_{12}(t_{0})-2D_{11}+D_{12})(2D_{22}(t_{0})+D_{12}(t_{0})-2D_{22}+D_{12})-k_{r}(D_{12})$
+
 where, $t_{0}$ is initial time
